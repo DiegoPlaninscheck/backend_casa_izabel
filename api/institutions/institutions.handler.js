@@ -1,8 +1,5 @@
 const crud = require("../../crud/index");
-
-
 const tableName = 'Instituicao';
-
 
 async function getInstitutions() {
     return await crud.get(tableName);
@@ -23,8 +20,6 @@ async function editInstitution(data, id) {
 async function removeInstitution(id) {
     return await crud.remove(tableName, id);
 }
-
-
 
 module.exports = {
     getInstitutions,
